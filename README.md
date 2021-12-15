@@ -1,13 +1,19 @@
 
 # Docker Pytorch
 
-python 3.9-slim
+Docker Image for pytorch environment.  
 
-jupyterlab torch torchvision
+pytorch statble 1.10, cpu only to shink Image size.
+
+
+
+
+```bash
+jupyterlab torch==1.10.0+cpu torchvision==0.11.1+cpu
+```
 
 
 ## Run Prebuilt Image
-
 
 
 Note: `git push` on `stable` branch will automatically build & publish image to DockerHub.

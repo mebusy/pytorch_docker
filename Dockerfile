@@ -1,6 +1,7 @@
 
-from python:3.9-slim
+from python:3.8-slim
 
-RUN pip3 install jupyterlab  torch torchvision # -f https://download.pytorch.org/whl/torch_stable.html
+# RUN pip install --upgrade pip
+# for cpu
 
-
+RUN pip3 install jupyterlab torch==1.10.0+cpu torchvision==0.11.1+cpu  -f https://download.pytorch.org/whl/cpu/torch_stable.html # torchaudio==0.10.0+cpu
