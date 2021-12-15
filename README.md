@@ -6,6 +6,13 @@ python 3.9-slim
 jupyterlab torch torchvision
 
 
+## Run Prebuilt Image
+
+
+
+Note: `git push` on `stable` branch will automatically build & publish image to DockerHub.
+
+
 ## Build Local Image
 
 ```bash
