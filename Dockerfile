@@ -1,5 +1,5 @@
 
-from python:3.8-slim
+from python:3.11-slim
 
 # RUN pip install --upgrade pip
 # for cpu
