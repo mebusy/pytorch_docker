@@ -27,19 +27,19 @@ $ docker run --rm -it mebusy/pytorch python -c "import torch; print(torch)"
 ```
 
 
-run jupyter notebook
+run jupyter lab
 
 ```bash
-docker run --rm -it -p 8888:8888 mebusy/pytorch jupyter notebook --allow-root --ip 0.0.0.0 --no-browser
+docker run --rm -it -p 8888:8888 mebusy/pytorch jupyter lab --allow-root --ip 0.0.0.0 --no-browser
 ```
 
-open jupyter notebook on hosted machine
+open jupyter lab on hosted machine
 
 ```bash
 $ # cd to .ipynb folder
 $ docker run --rm -it -p 8888:8888 \
         -v "$(pwd)":/workspace --pids-limit 16384 \
-        mebusy/pytorch bash -c "cd /workspace && jupyter notebook --allow-root --ip 0.0.0.0 --no-browser"
+        mebusy/pytorch bash -c "cd /workspace && jupyter lab --allow-root --ip 0.0.0.0 --no-browser"
 ```
 
 ## Build Local Image
@@ -56,10 +56,10 @@ docker run --rm -it mytorch python -c "import torch; print(torch)"
 <module 'torch' from '/usr/local/lib/python3.9/site-packages/torch/__init__.py'>
 ```
 
-run jupyter notebook
+run jupyter lab
 
 ```bash
-docker run --rm -it -p 8888:8888 mytorch jupyter notebook --allow-root --ip 0.0.0.0 --no-browser
+docker run --rm -it -p 8888:8888 mytorch jupyter lab --allow-root --ip 0.0.0.0 --no-browser
 ```
 
 
