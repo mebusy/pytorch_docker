@@ -5,7 +5,8 @@ from python:3.11-slim
 # for cpu
 
 # RUN pip3 install jupyterlab torch==1.10.0+cpu torchvision==0.11.1+cpu  -f https://download.pytorch.org/whl/cpu/torch_stable.html # torchaudio==0.10.0+cpu
-RUN pip3 install jupyterlab torch torchvision  --index-url https://download.pytorch.org/whl/cpu  # torchaudio
+RUN pip3 install jupyterlab
+RUN pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 
 # add curl & wget
 RUN apt-get update && apt-get install -y curl wget
